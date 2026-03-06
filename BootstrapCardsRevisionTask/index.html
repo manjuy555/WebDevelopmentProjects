@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BootstrapCards</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <h1 class="display-1 text-center">Bootstrap Cards</h1>
+      <h1 class="display-6 text-center">
+        Covered every card topic with live example
+      </h1>
+    </header>
+    <section class="container p-5 cards-topics">
+      <div class="topic1 mb-5">
+        <h2 class="text-primary">1. Basic Card Structure</h2>
+        <div class="card">
+          <div class="card-body">This is the simplest card.</div>
+        </div>
+      </div>
+
+      <div class="topic2 mb-5">
+        <h2 class="text-primary">2. Card Body</h2>
+        <div class="card w-25">
+          <div class="card-body">
+            <!-- uncomment and show below image for explanation that we can add any tag element but have to work on css accordingly -->
+            <img class="w-100" src="https://images.unsplash.com/photo-1761839258513-099c3121d72d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxfHx8ZW58MHx8fHx8" alt="MyPic">
+
+            <h5 class="card-title">Card title</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">
+              Card subtitle
+            </h6>
+            <p class="card-text">Some paragraph content....</p>
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another card link</a>
+            <!--space gets generated for adjacent links-->
+            <!-- .list-group.list-group-flush can be added here -->
+          </div>
+        </div>
+      </div>
+
+      <div class="topic3 mb-5">
+        <h2 class="text-primary">3. Card Header & Footer</h2>
+        <div class="card w-25 text-center">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Card Title</h5>
+            <p class="card-text">paragraph content.</p>
+            <a href="#" class="btn btn-primary">button or link</a>
+            <!-- .list-group.list-group-flush can be added here -->
+          </div>
+          <div class="card-footer text-body-secondary">Footer</div>
+        </div>
+      </div>
+
+      <div class="topic4 mb-5">
+        <h2 class="text-primary">4. Card Images</h2>
+        <div class="row g-3">
+          <!-- Image Top -->
+          <div class="col-md-4">
+            <p class="fw-bold text-center">.card-img-top</p>
+            <div class="card h-100">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1730805336219-47b46c34dc74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-top"
+                alt="top"
+              />
+              <div class="card-body">
+                <p class="card-text">
+                  Image is at the <strong>top</strong>, content below.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Image Bottom -->
+          <div class="col-md-4">
+            <p class="fw-bold text-center">.card-img-bottom</p>
+            <div class="card h-100">
+              <div class="card-body">
+                <p class="card-text">
+                  Image is at the <strong>bottom</strong>, content above.
+                </p>
+              </div>
+              <img
+                src="https://plus.unsplash.com/premium_photo-1730805336219-47b46c34dc74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img-bottom"
+                alt="bottom"
+              />
+            </div>
+          </div>
+          <!-- Image Overlay -->
+          <div class="col-md-12">
+            <p class="fw-bold text-center">.card-img-overlay</p>
+            <div class="card h-100 text-white text-center">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1730805336219-47b46c34dc74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D"
+                class="card-img"
+                alt="overlay"
+              />
+              <div
+                class="card-img-overlay d-flex flex-column justify-content-center align-center"
+                style="background: rgba(0, 0, 0, 0.45); border-radius: 0.375rem"
+              >
+                <h1 class="card-title"><span style="color:red" >Welcome to</span><br>
+<span style="
+  background: linear-gradient(
+                          45deg,
+                          green,
+                          yellow,
+                          red,
+                                                    #0097B2,
+
+                          #c13584
+                          
+                        );
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        background-clip: text;
+">Ecole Globale</span> International Girls' School in Dehradun
+</h1>
+                <div class="d-grid d-md-block">
+  <button style="background-color: red;" class="h-100 btn btn-danger" type="button">Latest Updates →</button>
+</div>
+
+                <!-- <p class="card-text">Text appears over the image.</p> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Horizontal Card /Image -->
+          <div class="col-md-6 mt-5">
+            <p class="fw-bold text-center mt-2">Horizontal Card</p>
+            <div class="card" style="max-width: 540px">
+              <div class="row g-0">
+                <div class="col-md-6">
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1730805336219-47b46c34dc74?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwzMnx8fGVufDB8fHx8fA%3D%3D"
+                    class="img-fluid rounded-start"
+                    alt="Horizontal Card"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">
+                      Image on the left, content on the right using a row inside
+                      the card.
+                    </p>
+                    <p class="card-text">
+                      <small class="text-body-secondary">Secondary text</small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic5 mb-5">
+        <h2 class="text-primary">5. Card Header with Nav Tabs & Nav Pills</h2>
+        <div class="row g-3">
+          <!-- Nav-tabs -->
+          <div class="col-md-6">
+            <p class="fw-bold text-center">.nav-tabs</p>
+            <div class="card text-center">
+              <div class="card-header">
+                <ul
+                  class="nav nav-tabs card-header-tabs"
+                  id="myTab"
+                  role="tablist"
+                >
+                  <li class="nav-item">
+                    <button
+                      class="nav-link active"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home"
+                      type="button"
+                    >
+                      Active
+                    </button>
+                  </li>
+
+                  <li class="nav-item">
+                    <button
+                      class="nav-link"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile"
+                      type="button"
+                    >
+                      Link
+                    </button>
+                  </li>
+
+                  <li class="nav-item">
+                    <button
+                      class="nav-link"
+                      id="disabled-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#disabled-tab-pane"
+                      type="button"
+                      aria-controls="disabled-tab-pane"
+                      aria-selected="false"
+                      disabled
+                    >
+                      Disabled
+                    </button>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="card-body tab-content">
+                <div class="tab-pane fade show active" id="home">
+                  <h5>Home Content</h5>
+                </div>
+
+                <div class="tab-pane fade" id="profile">
+                  <h5>Link Content</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Nav-pills -->
+          <div class="col-md-6">
+            <p class="fw-bold text-center">.nav-pills</p>
+            <div class="card text-center">
+              <div class="card-header">
+                <ul class="nav nav-pills card-header-pills">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true"
+                      >Disabled</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Card Title</h5>
+                <p class="card-text">paragraph content.</p>
+                <!--  stretched-link use need to inform -->
+                <a href="#" class="btn btn-primary">button or link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic6 mb-5">
+        <h2 class="text-primary">6. Card Groups</h2>
+        <!-- no gap between cards if want then can add margin r padding class to add gap -->
+        <div class="card-group">
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1770034285769-4a5a3f410346?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MjJ8fHxlbnwwfHx8fHw%3D"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">short text</p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Last updated 3 mins ago</small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1770034285769-4a5a3f410346?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MjJ8fHxlbnwwfHx8fHw%3D"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">short text</p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Last updated 3 mins ago</small
+                >
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img
+              src="https://images.unsplash.com/photo-1770034285769-4a5a3f410346?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MjJ8fHxlbnwwfHx8fHw%3D"
+              class="card-img-top"
+              alt=""
+            />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a wider card with supporting text below as a natural
+                lead-in to additional content. This card has even longer content
+                than the first to show that equal height action.
+              </p>
+              <p class="card-text">
+                <small class="text-body-secondary"
+                  >Last updated 3 mins ago</small
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="topic7 mb-5">
+        <h2 class="text-primary">7. Grid Cards</h2>
+        <!-- g-4 for gap between cards and Uses h-100 for equal height. -->
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1770034285769-4a5a3f410346?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MjJ8fHxlbnwwfHx8fHw%3D"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">short text</p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="https://images.unsplash.com/photo-1770034285769-4a5a3f410346?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MjJ8fHxlbnwwfHx8fHw%3D"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">short text</p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img
+                src="https://images.unsplash.com/photo-1770034285769-4a5a3f410346?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHw0MjJ8fHxlbnwwfHx8fHw%3D"
+                class="card-img-top"
+                alt=""
+              />
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">
+                  This is a longer card with supporting text below as a natural
+                  lead-in to additional content. This content is a little bit
+                  longer.
+                </p>
+                <p class="card-text">
+                  <small class="text-body-secondary"
+                    >Last updated 3 mins ago</small
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Class differences sheet -->
+    <section class="card-class-sheet">
+            <h2 class="text-info text-decoration-underline text-center">Classes List of Bootstrap Card</h2>
+    <p class="section-desc text-center">Quick reference for all Bootstrap card classes and what makes each one unique.</p>
+    <table class="table table-bordered table-hover diff-table">
+      <thead class="table-info">
+        <tr ><th>Class</th><th>What it does</th><th>Key Difference</th></tr>
+      </thead>
+      <tbody>`  
+        <tr><td><code>.card</code></td><td>Root card container, adds border, bg-white, border-radius, shadow</td><td>Always required</td></tr>
+        <tr><td><code>.card-body</code></td><td>Adds padding inside the card</td><td>Main content area</td></tr>
+        <tr><td><code>.card-title</code></td><td>Bold heading with bottom margin</td><td>Primary heading</td></tr>
+        <tr><td><code>.card-subtitle</code></td><td>Smaller grey heading</td><td>Secondary heading, uses muted color</td></tr>
+        <tr><td><code>.card-text</code></td><td>Paragraph; last child removes bottom margin</td><td>Cleans up spacing</td></tr>
+        <tr><td><code>.card-link</code></td><td>Adds margin-left to separate adjacent links</td><td>Only for inline links</td></tr>
+        <tr><td><code>.card-header</code></td><td>Top strip with light grey bg + bottom border</td><td>Outside card-body, gets its own bg</td></tr>
+        <tr><td><code>.card-footer</code></td><td>Bottom strip with light grey bg + top border</td><td>Outside card-body, aligns at bottom in card-group</td></tr>
+        <tr><td><code>.card-img-top</code></td><td>Rounds only top corners</td><td>Image before card-body</td></tr>
+        <tr><td><code>.card-img-bottom</code></td><td>Rounds only bottom corners</td><td>Image after card-body</td></tr>
+        <tr><td><code>.card-img</code></td><td>Rounds all corners, full width background</td><td>Used with overlay</td></tr>
+        <tr><td><code>.card-img-overlay</code></td><td>Absolutely positions content over card-img</td><td>Only works with .card-img</td></tr>
+        <tr><td><code>.card-group</code></td><td>Cards side-by-side, merged borders, equal height</td><td>No gutters between cards</td></tr>
+        <tr><td><code>.card-header-tabs</code></td><td>Merges tab nav into card-header border</td><td>Flush with header bottom border</td></tr>
+        <tr><td><code>.card-header-pills</code></td><td>Pill-style nav inside card-header</td><td>Floats inside header, no border flush</td></tr>
+        <!-- <tr><td><code>.list-group-flush</code></td><td>Removes outer border so list bleeds to card edges</td><td>Must be used inside a card</td></tr>
+        <tr><td><code>.stretched-link</code></td><td>Makes entire card clickable via ::after pseudo-element</td><td>Only one per card</td></tr>
+        <tr><td><code>h-100</code></td><td>Card height = 100% of column</td><td>Used with row-cols grid for equal height</td></tr> -->
+      </tbody>
+    </table>
+    </section>
+
+    <section class="card-real-project-example">
+        <h1 class="text-success text-center">Bootstrap Cards Real Project Example</h1>
+                <div class="row g-3">
+
+        <div class="col-md-3">
+            <h2 class="text-secondary fw-bold text-center">Ecommerce App</h2>
+        <div class="card text-center">
+
+          <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2FyZWV8ZW58MHx8MHx8fDA%3D" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Product Name</h5>
+            <p class="card-text">Product Description,Price.. </p>
+            <a href="#" class="btn btn-primary stretched-link">View Details →</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+            <h2 class="text-secondary fw-bold text-center">Login Form</h2>
+        <div class="card">
+          <div class="card-header text-center fw-bold">Login</div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label class="form-label">Email address</label>
+              <input type="email" class="form-control" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="d-grid">
+              <button class="btn btn-primary">Sign In</button>
+            </div>
+          </div>
+          <div class="card-footer text-center">
+            <a class="card-link" href="#">Forgot password?</a>
+            <a class="card-link" href="#">Sign Up</a>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
