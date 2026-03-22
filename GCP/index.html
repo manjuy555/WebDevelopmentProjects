@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Calculator Program</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-section">
+      <section class="input-section">
+        <h1>Enter your marks</h1>
+        <div>
+          <div class="subject-header subject-content">
+            <label>Subjects</label>
+            <label>Your score</label><label>Out of</label>
+            <label>Grade</label>
+          </div>
+        </div>
+        <div>
+          <div class="sub1 subject-content">
+            <button class="button-sub" onclick="removeSubject(this)">❌</button>
+            <label>English</label>
+            <input id="sub1" type="number" required /><label class="center-label">/100</label>
+            <label class="center-label" id="subject-grade">A</label>
+          </div>
+        </div>
+
+        <div>
+          <div class="sub2 subject-content">
+            <button class="button-sub" onclick="removeSubject(this)">❌</button>
+            <label>Maths</label>
+            <input id="sub2" type="number" required /><label class="center-label">/100</label>
+            <label class="center-label" id="subject-grade"></label>
+          </div>
+        </div>
+
+        <div class="buttons-div">
+          <button class="button-action" onclick="calculation()" id="calculate">Calculate ➡</button>
+          <button class="button-action" onclick="addSubject()" id="add">Add Subject ➡</button>
+          <button class="button-action" onclick="reset()" id="clear">Reset 🔃</button>
+        </div>
+      </section>
+      <section class="result-section">
+        <div id="welcome" class="welcome">
+          <h2>All the best!</h2>
+          <p style="font-size: large;">Enter your marks and see how well you did!</p>
+          <p class="wait-text">Waiting for marks...</p>
+        </div>
+        <div id="result" class="result">
+          <h1>Final Result</h1>
+          <div class="result-div">
+            <div class="result-class">
+              <span class="result-span">Total Score</span><span id="score">180</span>
+            </div>
+            <div class="result-class">
+              <span class="result-span">Grade</span><span id="grade">A</span>
+            </div>
+            <div class="result-class">
+              <span class="result-span">Average</span><span id="avg">85%</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
