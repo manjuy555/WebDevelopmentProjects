@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Application</title>
+    <link rel="icon" href="/assets/TodoIcon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="main">
+      <h1>My Todo Task</h1>
+
+      <!-- Search/Filter/Add Task -->
+      <div class="add-filter-section">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search by task name..."
+        />
+
+        <select id="filter-dd">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="pending">Pending</option>
+        </select>
+
+        <button id="add-btn">Add Task</button>
+      </div>
+
+      <!-- Task Table -->
+      <table id="table-section">
+        <thead>
+          <tr>
+            <th>Sr.No.</th>
+            <th>Task Name</th>
+            <th>Description</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="table-data"></tbody>
+      </table>
+
+      <p id="emptyMsg" class="empty-msg">No tasks yet added to show!!!</p>
+    </section>
+
+    <!-- Add New Task Modal -->
+    <section id="modal">
+      <h2>+ Add New Task</h2>
+
+      <div class="add-new-task">
+        <input type="text" id="taskName" placeholder="Enter Task Name..." />
+        <textarea
+          id="taskDesc"
+          placeholder="Enter Task Description..."
+        ></textarea>
+
+        <div class="modal-btn">
+          <button id="addModalBtn">+ Add</button>
+          <button id="cancelModalBtn">❌Cancel</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
